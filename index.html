@@ -2,44 +2,27 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- zeigt die Seite je nach Gerät des Benutzers richtig an -->
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- stellt die Website basierend auf dem Gerät des Benutzers richtig dar -->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Beratungsseite</title>
-  <style>
-    /* Hinzufügen von Animationen */
-    #randomAdvice {
-      transition: transform 0.3s;
-    }
-
-    /* Button wackelt bei Hover */
-    #randomAdvice:hover {
-      transform: rotate(10deg);
-    }
-
-    /* Textanimation: Weiches Einblenden */
-    .text {
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-    }
-
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-  </style>
+  <title>Beratung</title>
 </head>
 <body>
   <div class="container">
     <div class="beratung">
       <div class="id"></div>
-      <div class="text">Hier erscheint dein Rat!</div> <!-- Beispieltext, wird dynamisch durch JS aktualisiert -->
-      <div class="trenner"></div>
+      <div class="text"></div>
+      <div class="trennlinie"></div>
     </div>
 
-    <button id="zufallsRat"><img src="./images/icon-würfel.svg" alt="Würfel" srcset=""></button>
+    <button id="zufälligerRat"><img src="./images/icon-würfel.svg" alt="Würfel" srcset=""></button>
   </div>
 
   <div class="attribution">
     <a href="https://manueldinisjunior.com">ManuelMadeIT</a>.
   </div>
+
+</body>
+<script src="./js/script.js"></script>
+</html>
